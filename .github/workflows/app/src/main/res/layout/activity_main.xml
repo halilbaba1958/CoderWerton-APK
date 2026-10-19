@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0a0a0a">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bağlantı aranıyor..."
+        android:textColor="#aaaaaa"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:background="#1a1a1a"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="#ffffff"
+        android:visibility="visible"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#111111"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnInstagram"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="IG"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#222222"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnTiktok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="TT"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#222222"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnYoutube"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="YT"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#222222"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="X"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#222222"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="FB"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#222222"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnSnapchat"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="SC"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#222222"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:id="@+id/btnPinterest"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="PIN"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#222222"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
